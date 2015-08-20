@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 1.2'
 # http client
 gem 'faraday', '~> 0.9.1'
 
+# allow Cross-Origin Resource Sharing
+gem 'rack-cors', :require => 'rack/cors'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

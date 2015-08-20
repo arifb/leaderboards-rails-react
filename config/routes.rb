@@ -1,4 +1,5 @@
 SampleReactRailsApp::Application.routes.draw do
   resources :comments
-  root :to => redirect("/comments")
+  resources :teams, only: :index
+  root :to => redirect("/teams")
 end
