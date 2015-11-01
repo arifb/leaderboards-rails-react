@@ -10,7 +10,6 @@ var Leaderboard = React.createClass({
         <thead>
         <tr>
           <th>player</th>
-          <th>w-l differential</th>
           <th>score</th>
         </tr>
       </thead>
