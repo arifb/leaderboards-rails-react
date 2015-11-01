@@ -1,7 +1,7 @@
 class TeamsController < ApplicationController
 
   def index
-    @teams = Team.all.to_json
+    @players = Player.all.to_json(include: { teams: { only: :last_name }})
   end
 
 end

@@ -1,4 +1,3 @@
 class Team < ActiveRecord::Base
-  belongs_to :division
-  belongs_to :user
+  belongs_to :player
 end
