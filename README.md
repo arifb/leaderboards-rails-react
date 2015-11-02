@@ -2,7 +2,7 @@
 
 http://leaderboards.arifb.com
 
-Getting my feet wet with React.
+Proof of concept React on Rails.
 
 To get the app running:
 
