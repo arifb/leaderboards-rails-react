@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: pool_tracker_development
+  database: leaderboard_development
   pool: 5
   password:

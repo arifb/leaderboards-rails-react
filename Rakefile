@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-SampleReactRailsApp::Application.load_tasks
+Leaderboard::Application.load_tasks

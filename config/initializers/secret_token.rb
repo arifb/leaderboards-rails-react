@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-SampleReactRailsApp::Application.config.secret_key_base = '51f681017345c45b4a63bdfcc590218f3372bbbba700a6da4ead112d76cc63d15eee1dec086020ccd5e86368c30945450872c4b52b67940696a23227dc7e9225'
+Leaderboard::Application.config.secret_key_base = '51f681017345c45b4a63bdfcc590218f3372bbbba700a6da4ead112d76cc63d15eee1dec086020ccd5e86368c30945450872c4b52b67940696a23227dc7e9225'

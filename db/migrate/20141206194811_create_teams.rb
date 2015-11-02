@@ -6,6 +6,7 @@ class CreateTeams < ActiveRecord::Migration
       t.integer    :games_played
       t.integer    :wins
       t.integer    :losses
+      t.integer    :pick
       t.references :player
     end
   end

@@ -6,10 +6,10 @@ var Leaderboard = React.createClass({
       rows.push(<Player key={player.id} name={player.name} teams={player.teams} standings={this.props.standings} />);
     }, this);
     return (
-      <table>
+      <table className="table">
         <thead>
         <tr>
-          <th>player</th>
+          <th></th>
           <th>score</th>
         </tr>
       </thead>

@@ -1,0 +1,41 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin: 50px 0;
+    padding: 0;
+}
+
+#outer {
+    margin: 0 auto;    
+}
+
+.name {
+    font-size: 1.75em;
+}
+
+.score {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.stat {
+    font-size: 1.5em;
+}
+
+.teams {
+    font-size: 1em;
+    color: #205c7e;
+    font-weight: 500;
+}
+
+.table > thead > tr > th {
+  text-align: center;
+}
+
+.table > tbody > tr > td { 
+  border: none;
+}
+
+.td-center {
+  text-align: center;
+}

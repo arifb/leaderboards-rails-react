@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20141206194811) do
     t.integer "games_played"
     t.integer "wins"
     t.integer "losses"
+    t.integer "pick"
     t.integer "player_id"
   end
 

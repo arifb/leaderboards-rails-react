@@ -4,7 +4,7 @@ var Player = React.createClass({
       <div>
       <tr>
         <td>
-          {this.props.name}
+          <span className="name">{this.props.name}</span><br />
         </td>
         <td></td>
       </tr>

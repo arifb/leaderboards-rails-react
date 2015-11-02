@@ -1,5 +1,5 @@
-SampleReactRailsApp::Application.routes.draw do
+Leaderboard::Application.routes.draw do
   resources :comments
   resources :teams, only: :index
-  root :to => redirect("/teams")
+  root to: "teams#index"
 end
