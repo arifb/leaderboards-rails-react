@@ -1,7 +1,6 @@
 var Leaderboard = React.createClass({
   render: function() {
     var rows = [];
-    console.log(this.props);
     JSON.parse(this.props.players).forEach(function(player) {
       rows.push(<Player key={player.id} name={player.name} teams={player.teams} standings={this.props.standings} />);
     }, this);
