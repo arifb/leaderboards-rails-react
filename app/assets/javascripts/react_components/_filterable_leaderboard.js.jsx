@@ -27,6 +27,6 @@ var FilterableLeaderboard = React.createClass({
         });
         this.setState({standings: standings});
       }
-    }.bind(this));
+    }.bind(this), "json");
   }
 });
