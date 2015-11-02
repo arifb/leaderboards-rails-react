@@ -22,6 +22,7 @@ var FilterableLeaderboard = React.createClass({
     $.get("/standings.json", function(result) {
       var standings = new Array();
       if (this.isMounted()) {
+        console.log(typeof result);
         result.standing.forEach(function(team) { 
           standings[team.last_name] = { won: team.won, lost: team.lost }; 
         });
