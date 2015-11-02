@@ -2,7 +2,7 @@
 
 http://leaderboards.arifb.com
 
-Proof of concept React on Rails.
+React on Rails proof of concept.
 
 To get the app running:
 
