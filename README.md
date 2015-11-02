@@ -1,8 +1,8 @@
-# React on Rails app, tracking team nba pool
+## Leaderboards (NBA pool tracker)
 
 http://leaderboards.arifb.com
 
-Got my feet wet with React with this guy. 
+Getting my feet wet with React.
 
 To get the app running:
 
