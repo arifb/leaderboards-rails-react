@@ -1,4 +1,4 @@
-['adam h', 'adam r', 'arif', 'jamie', 'josh', 'steve'].each do |u|
+['hopper', 'rennie', 'arif', 'jampots', 'samson', 'steveo'].each do |u|
   Player.create(name: u)
 end
 
@@ -11,8 +11,8 @@ teams.each do |team|
 end
 
 Player.where(name: 'arif').first.teams   << Team.where("last_name in ('Cavaliers', 'Wizards','Raptors',  'Hornets', 'Lakers')")
-Player.where(name: 'adam r').first.teams << Team.where("last_name in ('Warriors', 'Heat', 'Jazz', 'Pistons', '76ers')")
-Player.where(name: 'steve').first.teams  << Team.where("last_name in ('Spurs', 'Grizzlies', 'Pacers', 'Suns', 'Trail Blazers')")
-Player.where(name: 'adam h').first.teams << Team.where("last_name in ('Clippers', 'Hawks', 'Mavericks', 'Kings', 'Nuggets')")
-Player.where(name: 'josh').first.teams   << Team.where("last_name in ('Thunder', 'Pelicans', 'Celtics', 'Magic', 'Timberwolves')")
-Player.where(name: 'jamie').first.teams  << Team.where("last_name in ('Rockets', 'Bulls', 'Bucks', 'Knicks', 'Nets')")
+Player.where(name: 'rennie').first.teams << Team.where("last_name in ('Warriors', 'Heat', 'Jazz', 'Pistons', '76ers')")
+Player.where(name: 'steveo').first.teams  << Team.where("last_name in ('Spurs', 'Grizzlies', 'Pacers', 'Suns', 'Trail Blazers')")
+Player.where(name: 'hopper').first.teams << Team.where("last_name in ('Clippers', 'Hawks', 'Mavericks', 'Kings', 'Nuggets')")
+Player.where(name: 'samson').first.teams   << Team.where("last_name in ('Thunder', 'Pelicans', 'Celtics', 'Magic', 'Timberwolves')")
+Player.where(name: 'jampots').first.teams  << Team.where("last_name in ('Rockets', 'Bulls', 'Bucks', 'Knicks', 'Nets')")
