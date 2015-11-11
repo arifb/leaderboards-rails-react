@@ -7,14 +7,22 @@ var FilterableLeaderboard = React.createClass({
   // poll result of api call every minute
   componentDidMount: function() {
     this.getStandingsAndRankedPlayers();
-    setInterval(this.getStandingsAndRankedPlayers, 1000 * 60);
+    this.interval = setInterval(this.getStandingsAndRankedPlayers, 1000 * 60);
   },
 
+
+  componentWillUnmount: function() {
+    clearInterval(this.interval);
+  },
+  
 
   render: function() {
     return (
       <div className="leaderboard">
         <Leaderboard players={this.state.players} standings={this.state.standings} />
+        <p>
+          last updated {this.state.standings["last_updated"] ? new Date(this.state.standings["last_updated"]).toLocaleString() + " Pacific" : ""}
+        </p>
       </div>
     );
   },
@@ -27,6 +35,7 @@ var FilterableLeaderboard = React.createClass({
         result.standing.forEach(function(team) { 
           standings[team.last_name] = { won: team.won, lost: team.lost }; 
         });
+        standings["last_updated"] = result.standings_date;
         this.setState({ standings: standings });
         this.setPlayerScores(); 
         this.setRankedPlayers();
